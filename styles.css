@@ -825,3 +825,215 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 212, 255, 0.4);
 }
+
+/* ═══════════════════════════════════════
+   SKIP LINK - Accessibility
+   ═══════════════════════════════════════ */
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.75rem 1.5rem;
+    background: var(--black);
+    color: var(--neon);
+    border: 1px solid var(--neon);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    z-index: 10001;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* ═══════════════════════════════════════
+   SUBSCRIBE SECTION
+   ═══════════════════════════════════════ */
+
+.subscribe {
+    background: linear-gradient(180deg, var(--black-pure) 0%, #030508 100%);
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.subscribe-copy {
+    color: var(--silver);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    flex: 1;
+    background: rgba(0, 212, 255, 0.03);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-right: none;
+    color: var(--white);
+    padding: 0.875rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.subscribe-form input::placeholder {
+    color: var(--silver);
+    opacity: 0.5;
+}
+
+.subscribe-form input:focus {
+    border-color: var(--neon);
+    background: rgba(0, 212, 255, 0.05);
+}
+
+.subscribe-form button {
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    color: var(--neon);
+    padding: 0.875rem 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    border-color: var(--neon);
+    background: rgba(0, 212, 255, 0.1);
+    box-shadow: 0 0 20px var(--neon-dim);
+}
+
+.subscribe-note {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--silver);
+    opacity: 0.3;
+}
+
+/* ═══════════════════════════════════════
+   MERCH SECTION
+   ═══════════════════════════════════════ */
+
+.merch {
+    background: linear-gradient(180deg, #030508 0%, var(--black-pure) 100%);
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.merch-placeholder {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.merch-coming {
+    color: var(--silver);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+}
+
+.merch-notify {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.merch-notify input {
+    flex: 1;
+    background: rgba(0, 212, 255, 0.03);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-right: none;
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.merch-notify input::placeholder {
+    color: var(--silver);
+    opacity: 0.4;
+}
+
+.merch-notify input:focus {
+    border-color: var(--neon);
+}
+
+.merch-notify button {
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    color: var(--neon);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.merch-notify button:hover {
+    opacity: 1;
+    border-color: var(--neon);
+}
+
+/* ═══════════════════════════════════════
+   FOOTER - Enhanced
+   ═══════════════════════════════════════ */
+
+.footer-nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    color: rgba(0, 212, 255, 0.3);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--neon);
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE - New sections
+   ═══════════════════════════════════════ */
+
+@media (max-width: 480px) {
+    .subscribe-form,
+    .merch-notify {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .subscribe-form input,
+    .merch-notify input {
+        border-right: 1px solid rgba(0, 212, 255, 0.2);
+    }
+
+    .footer-nav {
+        gap: 1.5rem;
+    }
+}

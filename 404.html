@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Lost | Boundary Operator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-symbol {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 200;
+            color: var(--neon);
+            text-shadow: 0 0 60px var(--neon-glow);
+            margin-bottom: 2rem;
+            animation: flicker-symbol 4s infinite;
+        }
+        @keyframes flicker-symbol {
+            0%, 90%, 100% { opacity: 1; }
+            92% { opacity: 0.8; }
+            94% { opacity: 1; }
+            96% { opacity: 0.6; }
+        }
+        .error-message {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            color: var(--silver);
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+        .return-link {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--neon);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border: 1px solid var(--neon);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .return-link:hover {
+            opacity: 1;
+            box-shadow: 0 0 30px var(--neon-dim);
+        }
+    </style>
+</head>
+<body>
+    <main class="error-page">
+        <div class="error-symbol">∂</div>
+        <p class="error-message">Signal lost at the boundary.</p>
+        <a href="/" class="return-link">Return to origin →</a>
+    </main>
+</body>
+</html>
