@@ -7,84 +7,80 @@
     <meta name="robots" content="noindex">
     <link rel="canonical" href="https://boundaryoperator.com/privacy">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∂</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <style>
         .privacy-page {
             min-height: 100vh;
-            padding: 6rem 1.5rem 4rem;
+            padding: 8rem 2rem 4rem;
         }
         .privacy-inner {
-            max-width: 700px;
+            max-width: 600px;
             margin: 0 auto;
         }
-        .privacy-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-top: 2rem;
+        .privacy-inner h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 2rem;
         }
-        .privacy-header h1 {
-            font-size: 0.7rem;
-            font-weight: 500;
-            letter-spacing: 0.5em;
-            text-transform: uppercase;
-            color: var(--neon);
-            font-family: var(--font-mono);
-            text-shadow: 0 0 20px var(--neon-dim);
+        .privacy-inner h2 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin: 2rem 0 0.75rem;
         }
-        .privacy-content {
-            color: var(--silver);
+        .privacy-inner p {
             font-size: 0.9rem;
-            line-height: 1.9;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
         }
-        .privacy-content p {
-            margin-bottom: 1.5rem;
+        .privacy-inner a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.3s;
         }
-        .privacy-content a {
-            color: var(--neon);
-            text-decoration: none;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
-            transition: border-color 0.3s ease;
-        }
-        .privacy-content a:hover {
-            border-color: var(--neon);
+        .privacy-inner a:hover {
+            border-color: var(--text-secondary);
         }
         .back-link {
             display: inline-block;
             margin-top: 3rem;
-            color: var(--silver);
-            text-decoration: none;
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            letter-spacing: 0.1em;
-            opacity: 0.6;
-            transition: opacity 0.3s ease;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-bottom: none;
+            transition: color 0.3s;
         }
         .back-link:hover {
-            opacity: 1;
-            color: var(--neon);
+            color: var(--text-secondary);
         }
     </style>
 </head>
 <body>
     <main class="privacy-page">
         <div class="privacy-inner">
-            <header class="privacy-header">
-                <h1>[ Privacy ]</h1>
-            </header>
+            <h1>Privacy</h1>
 
-            <div class="privacy-content">
-                <p>Boundary Operator collects email addresses solely to send updates about new music releases, merch drops, and occasional announcements. Your email is never sold or shared with third parties.</p>
+            <h2>Email</h2>
+            <p>Email addresses collected through this site are used only for updates on new releases and announcements. Your information is never sold or shared with third parties.</p>
 
-                <p>This site uses privacy-respecting analytics to understand traffic patterns. No personal data is collected or stored. No cookies are used for tracking.</p>
+            <h2>Analytics</h2>
+            <p>This site uses privacy-respecting analytics. No personal data is collected or stored. No cookies are used for tracking.</p>
 
-                <p>The embedded Spotify player is provided by Spotify and operates under their privacy policy.</p>
+            <h2>Third Parties</h2>
+            <p>The Spotify player embedded on this site operates under Spotify's own privacy policy.</p>
 
-                <p>For questions or data removal requests, contact <a href="mailto:contact@crystallinelabsllc.com">contact@crystallinelabsllc.com</a></p>
+            <h2>Contact</h2>
+            <p>For data requests or removal: <a href="mailto:contact@crystallinelabsllc.com">contact@crystallinelabsllc.com</a></p>
 
-                <p>Last updated: January 2026</p>
-            </div>
+            <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.8rem;">Last updated February 2026</p>
 
-            <a href="/" class="back-link">← Return to main</a>
+            <a href="/" class="back-link">&#8592; Return</a>
         </div>
     </main>
 </body>

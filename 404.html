@@ -3,63 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signal Lost | Boundary Operator</title>
+    <title>Lost | Boundary Operator</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∂</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <style>
         .error-page {
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 2rem;
         }
         .error-symbol {
-            font-size: clamp(6rem, 20vw, 12rem);
-            font-weight: 200;
-            color: var(--neon);
-            text-shadow: 0 0 60px var(--neon-glow);
-            margin-bottom: 2rem;
-            animation: flicker-symbol 4s infinite;
-        }
-        @keyframes flicker-symbol {
-            0%, 90%, 100% { opacity: 1; }
-            92% { opacity: 0.8; }
-            94% { opacity: 1; }
-            96% { opacity: 0.6; }
+            font-family: var(--font-display);
+            font-size: 6rem;
+            color: var(--text-muted);
+            line-height: 1;
+            margin-bottom: 1.5rem;
         }
         .error-message {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            letter-spacing: 0.2em;
-            color: var(--silver);
-            margin-bottom: 3rem;
-            text-transform: uppercase;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
         }
-        .return-link {
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--neon);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border: 1px solid var(--neon);
-            opacity: 0.7;
-            transition: all 0.3s ease;
+        .error-link {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+            transition: color 0.3s, border-color 0.3s;
         }
-        .return-link:hover {
-            opacity: 1;
-            box-shadow: 0 0 30px var(--neon-dim);
+        .error-link:hover {
+            color: var(--text-secondary);
+            border-color: var(--text-secondary);
         }
     </style>
 </head>
 <body>
     <main class="error-page">
-        <div class="error-symbol">∂</div>
-        <p class="error-message">Signal lost at the boundary.</p>
-        <a href="/" class="return-link">Return to origin →</a>
+        <div>
+            <div class="error-symbol">&#8706;</div>
+            <p class="error-message">Signal lost at the boundary.</p>
+            <a href="/" class="error-link">Return to origin</a>
+        </div>
     </main>
 </body>
 </html>
