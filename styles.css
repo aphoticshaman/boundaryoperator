@@ -233,6 +233,33 @@ a {
     color: var(--text-secondary);
 }
 
+.hero-avatar {
+    margin-top: 30px;
+    width: clamp(140px, 20vw, 200px);
+    height: clamp(140px, 20vw, 200px);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: grayscale(10%) contrast(1.05);
+}
+
+.hero-fans {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-top: 1.25rem;
+}
+
 /* ================================================================
    SECTIONS — GENERIC
    ================================================================ */
@@ -322,6 +349,24 @@ a {
     letter-spacing: 0.06em;
     color: var(--text-muted);
     margin-top: 0.75rem;
+}
+
+.intro-photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 40%,
+        rgba(8, 8, 8, 0.45) 70%,
+        rgba(8, 8, 8, 0.85) 100%
+    );
+    pointer-events: none;
 }
 
 .intro-photo img {
