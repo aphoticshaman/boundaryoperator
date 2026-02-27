@@ -33,7 +33,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://open.spotify.com">
@@ -307,9 +307,6 @@
             </button>
             <div class="nav-links">
                 <a href="#music">Music</a>
-                <a href="#art">Art</a>
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
                 <a href="#connect">Connect</a>
             </div>
         </div>
@@ -323,46 +320,16 @@
                 <span class="hero-line hero-line--accent">Operator</span>
             </h1>
             <div class="hero-divider"></div>
-            <p class="hero-tagline">Music. Art. Research. Code.</p>
-            <div class="hero-avatar">
-                <img src="images/avatar.png" alt="Ryan Cardwell" width="400" height="400">
-            </div>
-            <p class="hero-fans">For fans of Massive Attack, Billie Eilish, Portishead, Bj&ouml;rk, Tricky.</p>
+            <p class="hero-tagline">Dark, Authentic, Powerful, Electronic Music.</p>
         </div>
     </header>
 
     <main id="main">
 
-        <!-- Intro -->
-        <section class="section" id="intro">
+        <!-- Player -->
+        <section class="section" id="music">
             <div class="section-inner">
-                <div class="intro">
-                    <div class="intro-text">
-                        <p class="intro-lead">Ryan Cardwell spent sixteen years in the US Army, serving in Iraq and Afghanistan for three and a half years, and as a member of the Army's bomb squad: Explosive Ordnance Disposal. Now, he makes electronic music, paints, conducts independent AI safety research, and writes about consciousness.</p>
-                        <p class="intro-aside">Boundary Operator isn't an alias. It's a job description.</p>
-
-                    </div>
-                    <div class="intro-photo">
-                        <img src="images/ryan-deployed.jpg" alt="Ryan Cardwell during deployment" width="640" height="480">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Music -->
-        <section class="section section--alt" id="music">
-            <div class="section-inner">
-                <h2 class="section-heading reveal">Music</h2>
-                <p class="section-lead reveal">80+ tracks. Dark electronic, future bass, melodic bass, trip-hop. Listeners across 30+ countries.</p>
-                <blockquote class="review-quote reveal">
-                    <p>&ldquo;A captivating futuristic sound that lands somewhere between dark electro-pop and classic British trip-hop&hellip; outstanding track with a unique sound that&rsquo;s both sinister and cutting edge. Brilliant work, all around!&rdquo;</p>
-                    <cite>&mdash; <a href="https://radioairplayblog.blogspot.com/2026/02/song-review-boundary-operator-sink.html" target="_blank" rel="noopener noreferrer">Steven Azami, RadioAirplay.com</a></cite>
-                </blockquote>
-                <blockquote class="review-quote reveal">
-                    <p>&ldquo;A relaxed and thoughtful listen, the flow feels natural and unforced.&rdquo;</p>
-                    <cite>&mdash; Carolyn Musto, Beatorganic</cite>
-                </blockquote>
-                <div class="spotify-embed reveal">
+                <div class="spotify-embed">
                     <iframe
                         src="https://open.spotify.com/embed/artist/1VlBxJAva8lpkTMfrs17uy?utm_source=generator&theme=0"
                         width="100%"
@@ -388,6 +355,56 @@
             </div>
         </section>
 
+        <!-- Story -->
+        <section class="section" id="story">
+            <div class="section-inner story-inner">
+                <p class="story-aside reveal">I have been to some places, I made it back, and this music is what I brought with me.</p>
+                <div class="story-photo reveal">
+                    <div class="intro-photo">
+                        <img src="images/ryan-guitar-sunset.jpg" alt="Ryan Cardwell with guitar at sunset" width="640" height="480">
+                    </div>
+                </div>
+                <p class="story-text reveal">Ryan Cardwell spent sixteen years in the US Army, serving in Iraq and Afghanistan for three and a half years, and as a member of the Army's bomb squad: Explosive Ordnance Disposal. Now, he makes electronic music, paints, conducts independent AI safety research, and writes about consciousness.</p>
+                <blockquote class="review-quote reveal">
+                    <p>&ldquo;A captivating futuristic sound that lands somewhere between dark electro-pop and classic British trip-hop&hellip; outstanding track with a unique sound that&rsquo;s both sinister and cutting edge. Brilliant work, all around!&rdquo;</p>
+                    <cite>&mdash; <a href="https://radioairplayblog.blogspot.com/2026/02/song-review-boundary-operator-sink.html" target="_blank" rel="noopener noreferrer">Steven Azami, RadioAirplay.com</a></cite>
+                </blockquote>
+                <p class="story-text reveal">The mathematical boundary operator — &#8706; — maps objects to their edges. It's the most honest name he could have picked. Every domain he works in, he's at the edge between what's known and what isn't. Between what's safe and what detonates. Between signal and noise.</p>
+                <blockquote class="review-quote reveal">
+                    <p>&ldquo;A relaxed and thoughtful listen, the flow feels natural and unforced.&rdquo;</p>
+                    <cite>&mdash; Carolyn Musto, Beatorganic</cite>
+                </blockquote>
+                <p class="story-text reveal">80+ tracks. Dark electronic, future bass, melodic bass, trip-hop. Listeners across 30+ countries.</p>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-inner">
+                <div class="about-inline reveal">
+                    <div class="about-inline-text">
+                        <figure class="about-rooftop">
+                            <img src="images/ryan-rooftop.jpg" alt="Ryan Cardwell in Iraq" loading="lazy">
+                        </figure>
+                        <p>When the uniform came off, the pattern recognition didn't.</p>
+                        <p>Boundary Operator makes dark electronic music, paints fluid acrylics, conducts AI safety research, and writes about consciousness. He wrote a memoir called Defuzed. He's built containment architectures in Rust, disclosed vulnerabilities to Anthropic, hung paintings in Gulf Coast galleries, and put music in headphones across thirty countries.</p>
+                        <p>The mathematical boundary operator — &#8706; — maps objects to their edges. It's the most honest name he could have picked. Every domain he works in, he's at the edge between what's known and what isn't. Between what's safe and what detonates. Between signal and noise.</p>
+                        <p class="about-location">Based in Pensacola, Florida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scuba -->
+        <section class="section" id="scuba">
+            <div class="section-inner section-inner--center">
+                <figure class="scuba-photo reveal">
+                    <img src="images/ryan-scuba.jpg" alt="Ryan scuba diving" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
         <!-- Terminal — ARG -->
         <section class="terminal-section" id="terminal-section">
             <div class="terminal-bar" id="terminal-bar">
@@ -405,112 +422,6 @@
                     </div>
                 </div>
                 <div class="terminal-minimize terminal-minimize--bottom" id="terminal-min-bottom">[ minimize ]</div>
-            </div>
-        </section>
-
-        <!-- Art -->
-        <section class="section" id="art">
-            <div class="section-inner">
-                <h2 class="section-heading reveal">Visual Art</h2>
-                <p class="section-lead reveal">Fluid acrylic on canvas as Blue Bedlam. Exhibited at Gulf Coast galleries. Work in private collections.</p>
-                <!-- TODO: Add painting images to images/art/ directory:
-                     coven.jpg, sea-wolf.jpg, carrier-wave.jpg,
-                     ghost.jpg, neptunes-fury.jpg, gray-hats.jpg -->
-                <div class="art-grid reveal">
-                    <figure class="art-piece">
-                        <img src="images/art/coven.jpg" alt="Coven — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Coven</figcaption>
-                    </figure>
-                    <figure class="art-piece">
-                        <img src="images/art/sea-wolf.jpg" alt="Sea Wolf — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Sea Wolf</figcaption>
-                    </figure>
-                    <figure class="art-piece">
-                        <img src="images/art/carrier-wave.jpg" alt="Carrier Wave — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Carrier Wave</figcaption>
-                    </figure>
-                    <figure class="art-piece">
-                        <img src="images/art/ghost.jpg" alt="Ghost — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Ghost</figcaption>
-                    </figure>
-                    <figure class="art-piece">
-                        <img src="images/art/embrace.jpg" alt="Embrace — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Embrace</figcaption>
-                    </figure>
-                    <figure class="art-piece">
-                        <img src="images/art/gray-hats.jpg" alt="Gray Hats — fluid acrylic on canvas" loading="lazy">
-                        <figcaption>Gray Hats</figcaption>
-                    </figure>
-                </div>
-                <a href="https://bluebedlam.art" target="_blank" rel="noopener noreferrer" class="section-link reveal">Full collection at bluebedlam.art</a>
-            </div>
-        </section>
-
-        <!-- Work -->
-        <section class="section section--alt" id="work">
-            <div class="section-inner">
-                <h2 class="section-heading reveal">Research & Writing</h2>
-                <div class="work-grid">
-                    <div class="work-card reveal">
-                        <div class="work-card-cover">
-                            <!-- TODO: Save book cover from Amazon to images/books/defuzed.jpg -->
-                            <img src="images/books/defuzed.jpg" alt="Defuzed book cover" loading="lazy">
-                        </div>
-                        <h3>Defuzed</h3>
-                        <p>The memoir. Bomb squad soldiers' experiences — what it's like to do the job nobody wants to think about.</p>
-                        <a href="https://www.amazon.com/Defuzed-Bomb-Squad-Soldiers-Experiences/dp/B0CZB1FKLK" target="_blank" rel="noopener noreferrer" class="work-link">Amazon</a>
-                    </div>
-                    <div class="work-card reveal">
-                        <div class="work-card-cover">
-                            <!-- TODO: Save book cover from Amazon to images/books/mathematics-of-intelligence.jpg -->
-                            <img src="images/books/mathematics-of-intelligence.jpg" alt="The Mathematics of Intelligence book cover" loading="lazy">
-                        </div>
-                        <h3>The Mathematics of Intelligence</h3>
-                        <p>The research. Compression, integration, causality — what it takes for a system to understand itself.</p>
-                        <a href="https://www.amazon.com/Mathematics-Intelligence-Ryan-Cardwell/dp/B0DW5DKVML" target="_blank" rel="noopener noreferrer" class="work-link">Amazon</a>
-                    </div>
-                    <div class="work-card reveal">
-                        <h3>AI Safety</h3>
-                        <p>ORCASWORD behavioral fingerprinting. Oracle attack disclosures to Anthropic. fractal_one containment architecture in Rust. 17 papers on Zenodo, including:</p>
-                        <ul class="work-papers">
-                            <li><a href="https://zenodo.org/records/18179979" target="_blank" rel="noopener noreferrer">Ontological Divergence Under Proprioceptive Load</a> — behavioral fingerprinting method for LLM alignment verification</li>
-                            <li><a href="https://zenodo.org/records/18375648" target="_blank" rel="noopener noreferrer">Behavioral Attractors via Simulated Internal-State Telemetry</a> — how structured telemetry causally modifies LLM behavior</li>
-                            <li><a href="https://zenodo.org/records/17719985" target="_blank" rel="noopener noreferrer">PSAN Tri-Fork</a> — momentum-gated control for human-AI cognitive synchronization</li>
-                        </ul>
-                    </div>
-                    <div class="work-card reveal">
-                        <h3>Software</h3>
-                        <p>51,000 lines of Rust. Containment architectures. Audio DSP plugins. WASM. If the tool doesn't exist, it gets built.</p>
-                        <p>From Kaggle competitions for using AI/ML to translating ancient Akkadian into English, to asking why the Millennium Prize math problems exist as a set and how they pertain to consciousness while publishing the progress. Boundary Operator pushes AI to its extremes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="section" id="about">
-            <div class="section-inner">
-                <h2 class="section-heading reveal">About</h2>
-                <div class="about">
-                    <div class="about-text reveal">
-                        <p>When the uniform came off, the pattern recognition didn't.</p>
-                        <p>Cardwell makes dark electronic music, paints fluid acrylics, conducts AI safety research, and writes about consciousness. He wrote a memoir called Defuzed. He's built containment architectures in Rust, disclosed vulnerabilities to Anthropic, hung paintings in Gulf Coast galleries, and put music in headphones across thirty countries.</p>
-                        <p>The mathematical boundary operator — &#8706; — maps objects to their edges. It's the most honest name he could have picked. Every domain he works in, he's at the edge between what's known and what isn't. Between what's safe and what detonates. Between signal and noise.</p>
-                        <p>Most of this work was produced through adversarial cross-validation across five or six AI systems simultaneously — Claude, ChatGPT, Grok, Gemini, DeepSeek — a process he calls the Pod. He's one of roughly a million people the industry calls centaur users. The difference is he publishes what comes out.</p>
-                        <p class="about-location">Based in Pensacola, Florida.</p>
-                    </div>
-                    <div class="about-photos reveal">
-                        <figure class="about-photo about-photo--wide">
-                            <img src="images/ryan-rooftop.jpg" alt="Ryan Cardwell in Iraq" loading="lazy">
-                        </figure>
-                        <figure class="about-photo">
-                            <img src="images/ryan-eod-team.jpg" alt="EOD team with robot and bomb suit" loading="lazy">
-                        </figure>
-                        <figure class="about-photo">
-                            <img src="images/ryan-scuba.jpg" alt="Ryan scuba diving" loading="lazy">
-                        </figure>
-                    </div>
-                </div>
             </div>
         </section>
 
